@@ -1,0 +1,39 @@
+基本指令如下:
+git init: 初始化 Git Repository
+git status: 觀察Repository檔案追蹤狀況
+git add 檔名 : 將檔案加入追蹤清單，如: git add .
+git commit -m “此處填版本訊息”: 建一組版本更新訊息
+git branch: 查看分支(branch) : 預設為 master
+git remote -v: 查詢遠端的repository
+git log: 查詢更改紀錄
+git remote add 雲端名稱(自己取) 網址 :將本機端和Github雲端上的專案相連
+git push 遠端空間名稱 master(遠端空間的分支)(名稱): 將本機端的資料上傳(push) 到雲端
+git clone 遠端空間網址(clone那邊) 本機資料夾名稱: 下載/複製(clone)Github雲端專案到本機端
+
+
+步驟:
+建資料夾放在桌面 以下稱A
+cmd 輸入git init 初始化git
+A建立任何檔案  在cmd輸入  git status  看狀態
+cmd輸入 git add .  讓A檔案受git 追蹤
+cmd輸入 git commit -m “此處填版本訊息” 
+cmd輸入 git remote add (建立自己的遠端空間名稱) (遠端網址)
+cmd輸入 git remote      可以看遠端建立的名子
+cmd輸入 git remote -v   可以看遠端建立的名子及網址
+
+推送 git push practie master (遠端名子) (網址) 
+
+git push -u origin test (遠端的網路名子)(要上傳的本地分枝)(新增)
+
+
+
+新增分支: 
+git branch dev  (dev是分支名稱)
+git branch   (看分支)
+切換分支:
+git checkout dev (dev是分支名稱)
+ git checkout -b  leo (新增分支並直接移動到這個分支)
+觀看分支狀態: 
+git checkout master 
+
+git merge dev 合併(要在master上)
